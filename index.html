@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff0000, #cc0000);
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: white;
+            color: red;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #ffcccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <p>100 Pesos is equal to: <span id="yen">--</span> Yen</p>
+        <button onclick="convertToYen()">Convert</button>
+    </div>
+    <script>
+        function convertToYen() {
+            document.getElementById("yen").innerText = 100 * 2.56;
+        }
+    </script>
+</body>
+</html>
